@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+        body{
+    font-family: 'Pacifico', cursive;
+        margin: 0px;
+            padding: 0px;
+    background-image: url(images/gallery.jpg);
+        background-repeat: no-repeat;
+           color: white;
+    background-size: cover;
+        background-attachment: fixed;
+  }
+    .left{
+        position: absolute;
+            left: 70px;
+                top: 30px;
+                    display: inline-block;
+  }
+    .left img{
+        width: 60px;
+          margin:  auto 12px;
+            border: 2px solid black;
+              border-radius: 1000px;
+              }
+                .mid{
+                 display: block;
+                     width: 55%;
+                         margin: 25px auto;
+                         }
+                           .right{
+                               position: absolute;
+                                   right: 35px;
+                                       top: 40px;
+                                           display: inline-block;
+  }
+    .navbar li{
+        display: inline-block;
+  }
+    .navbar li a{
+        margin: auto;
+            color: white;
+                text-decoration: none;
+                    padding:10px 20px;
+                        font-size: 18px;
+                          }
+                            .navbar li a:hover,
+                              .navbar li a.active
+                                {
+                                 text-decoration: underline;
+                                 color: red;
+                                      }
+                                       .left div{
+                                          text-align: center;
+                                           }
+     .bts{
+          margin: 3px;
+               background-color: lightgrey;
+                    color: darkblue;
+                         padding: 3px 5px;
+                              border: 3px solid lightblue;
+                                   border-radius: 5px;
+                                    }
+                                         .bts:hover{
+                                           background-color: skyblue
+                                                }
+                                                     .best{
+                                                            position: absolute;
+                                                                   top: 250px;
+                                                                          left: 140px;
+                                                                            width: 70%;
+                                                                              margin: auto;
+                                                                               }
+                                                                               .best h1{
+                                                                               text-align: center;
+                                                                               }
+                                                                               .formgrp input{
+                                                                                display: block;
+                                                                                text-align: center;
+                                                                                padding: 5px;
+                                                                                margin: 10px auto;
+                                                                                 border: 2px solid navy;
+                                                                                 width: 500px;
+                                                                                 font-size: 25px;
+                                                                                 border-radius: 9px;
+                                                                                   }
+                                                                                    .member input{
+                                                                                    display: block;
+                                                                                    text-align: center;
+                                                                                    padding: 10px;
+                                                                                    margin: 15px auto;
+                                                                                    border: 3px solid gold;
+                                                                                    width: 400px;
+                                                                                    font-size: 30px;
+                                                                                    border-radius: 10px;
+                                                                                    }
+                                                                                    .member input:hover{
+                                                                                     background-color: goldenrod;
+                                                                                     color: black;
+                                                                                       }
+                                                                                         .video h2{
+display: block;
+position: absolute;
+top: 750px;
+left: 320px;
+text-align: center;
+padding: 15px;
+margin: auto;
+width: 300px;
+font-size: 35px;
+border-radius: 20px;
+color: skyblue;
+}
+.container{
+  height: 864px;
+    width: 100%;
+      position: relative;
+        top: 750px;
+          border: 3px solid red;
+            display: flex;
+              /*flex-direction: column;
+                flex-direction: row-reverse;
+                  flex-direction: column-reverse;*/
+                    /*justify-content: center;
+                      justify-content: space-evenly;
+                        justify-content: space-between;
+  align-items: flex-start;
+    align-items: flex-end;
+      align-items: center;*/
+        justify-content: space-around;
+        }
+        .item{
+          width: 200px;
+            height: 200px;
+              margin: 12px;
+                padding: 3px;
+                  border: 2px solid green;
+}
+#item1{
+ /* order: 2;
+   flex-grow: 4;*/
+     /*flex:2 0 50px;*/
+}
+#item2{
+
+  /*order: 1;
+    flex-grow: 5;*/
+     /* flex:2 0 400px;*/
+     }
+     #item3{
+ /* order: 3;
+   flex-grow: 3;*/
+     /*flex:2 0 300px;*/
+}
+.img{
+  width: 200px;
+    height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="images/logo~2.jpg" alt="" />
+      <div> PICS</div>
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button class="bts">Call Us</button>
+      <button class="bts">Email Us:</button>
+    </div>
+  </header>
+  <div class="best">
+    <h1>*BEST PHOTOS GALLERY*</h1>
+    <form action="form.php">
+      <div class="formgrp">
+        <input type="text" name="" placeholder="Enter your name" />
+      </div>
+      <div class="formgrp">
+        <input type="text" placeholder="Enter your age" />
+      </div>
+      <div class="formgrp">
+        <input type="text" name="" placeholder="Enter gender" />
+      </div>
+      <div class="formgrp">
+        <input type="email" placeholder="Enter your Email" />
+      </div>
+      <div class="formgrp">
+        <input type="number" placeholder="Enter your number" />
+      </div>
+      <div class="member">
+        <input type="submit" value="Sign Up" />
+      </div>
+    </form>
+  </div>
+  <div class="video">
+    <h2>PICTURES:</h2>
+    <div class="container">
+      <div class="item" id="item1">first item
+      </div>
+      <div class="item" id="item2">second item
+      </div>
+      <div class="item" id="item3">third item
+      </div>
+  <script src="main.js"></script>
+</body>
+</html>
